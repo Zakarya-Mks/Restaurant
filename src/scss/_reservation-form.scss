@@ -1,0 +1,79 @@
+#content {
+  .reservation_form {
+    background: url('https://preview.colorlib.com/theme/steakshop/img/reservation-bg.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 600px;
+    margin-bottom: 150px;
+
+    .aligner {
+      @include bodyMaxWidth;
+      position: relative;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .form-section {
+      position: absolute;
+      top: 100px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 95%;
+
+      @include addBreakPont('sm') {
+        width: 90%;
+      }
+
+      @include addBreakPont('md') {
+        width: 80%;
+      }
+
+      @include addBreakPont('lg') {
+        width: 50%;
+        right: 1rem;
+        left: auto;
+        transform: translateX(0);
+      }
+
+      @include addBreakPont('xl') {
+        width: 40%;
+        right: 2rem;
+      }
+
+      h1 {
+        @extend %h1Style;
+      }
+
+      form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 70px 50px;
+        background-color: #fff;
+        box-shadow: 0 20px 50px rgba(0, 0, 0, 0.1);
+        font-size: 0.8rem;
+
+        input {
+          width: 100%;
+          padding: 1rem;
+          border: none;
+          border-bottom: solid 1px #eee;
+          margin-bottom: 1rem;
+
+          &:focus {
+            outline: transparent;
+          }
+        }
+
+        button {
+          @extend %actionButtonStyle;
+        }
+      }
+    }
+
+    @include addBreakPont('md') {
+      margin-right: 150px;
+    }
+  }
+}

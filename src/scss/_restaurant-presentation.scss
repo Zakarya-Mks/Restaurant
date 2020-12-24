@@ -1,0 +1,206 @@
+%actionButtonStyle {
+  text-transform: capitalize;
+  background: transparent;
+  border: solid 1px $main-reddish-color;
+  line-height: 1.5;
+  padding: 0.5rem 1rem;
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  border-radius: 2px;
+  transition: background 0.3s ease 0s, color 0.3s ease 0s;
+
+  &:hover {
+    @include pointer;
+    background: $main-reddish-color;
+    color: #fff;
+  }
+}
+
+%h1Style {
+  font-size: 2rem;
+  font-family: 'Pacifico', cursive;
+  font-weight: 100;
+  margin-bottom: 1rem;
+}
+
+%pStyle {
+  font-size: 0.9rem;
+  color: $paragraph-text-color;
+  line-height: 28px;
+  margin-bottom: 1rem;
+  text-align: start;
+}
+
+#content {
+  .restaurant_presentation {
+    padding: 2rem 0;
+    display: flex;
+    justify-content: center;
+
+    .aligner {
+      @include bodyMaxWidth;
+    }
+
+    .breakfast_menu_presentation {
+      display: flex;
+      padding-bottom: 1rem;
+
+      .left-section {
+        flex: 1 1 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 0 2rem;
+
+        h1 {
+          @extend %h1Style;
+        }
+        p {
+          @extend %pStyle;
+        }
+
+        button {
+          @extend %actionButtonStyle;
+        }
+
+        @include addBreakPont('sm') {
+          padding: 0 3rem;
+        }
+        @include addBreakPont('md') {
+          padding: 0 10rem 0 6rem;
+        }
+
+        @include addBreakPont('lg') {
+          padding: 0 7rem 0 2rem;
+        }
+
+        @include addBreakPont('xl') {
+          padding: 0 10rem 0 2rem;
+        }
+      }
+
+      .right-section {
+        flex: 1 1 50%;
+        display: none;
+        align-items: center;
+        position: relative;
+
+        .img-container {
+          position: relative;
+
+          img {
+            @include img-fluid;
+          }
+
+          img:nth-child(2) {
+            position: absolute;
+            left: -20%;
+            z-index: 999;
+          }
+        }
+
+        @include addBreakPont('lg') {
+          display: flex;
+          padding: 0 1rem;
+
+          img:nth-child(2) {
+            bottom: 0px;
+          }
+        }
+
+        @include addBreakPont('xl') {
+          padding: 0 2rem;
+
+          img:nth-child(2) {
+            bottom: 20px;
+          }
+        }
+      }
+
+      @include addBreakPont('md') {
+        padding-bottom: 5rem;
+      }
+    }
+
+    .lunch_menu_presentation {
+      display: flex;
+      flex-direction: row-reverse;
+
+      .left-section {
+        flex: 1 1 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0 2rem;
+
+        h1 {
+          @extend %h1Style;
+          margin-top: 2rem;
+        }
+
+        p {
+          @extend %pStyle;
+        }
+
+        @include addBreakPont('sm') {
+          padding: 0 3rem;
+        }
+        @include addBreakPont('md') {
+          padding: 0 10rem 0 6rem;
+        }
+
+        @include addBreakPont('lg') {
+          padding: 0 2rem 0 7rem;
+        }
+
+        @include addBreakPont('xl') {
+          padding: 0 2rem 0 10rem;
+        }
+      }
+
+      .right-section {
+        flex: 1 1 50%;
+        display: none;
+        align-items: center;
+
+        .img-container {
+          position: relative;
+
+          img {
+            @include img-fluid;
+          }
+
+          img:nth-child(2) {
+            position: absolute;
+            z-index: 999;
+            right: -20%;
+            z-index: 999;
+          }
+        }
+
+        @include addBreakPont('lg') {
+          display: flex;
+          padding: 0 1rem;
+
+          img:nth-child(2) {
+            top: 30px;
+          }
+        }
+
+        @include addBreakPont('xl') {
+          padding: 0 2rem;
+
+          img:nth-child(2) {
+            top: 100px;
+          }
+        }
+      }
+    }
+
+    @include addBreakPont('md') {
+      margin-right: 150px !important;
+      padding: 5rem 0;
+    }
+  }
+}

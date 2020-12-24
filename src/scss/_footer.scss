@@ -1,0 +1,44 @@
+#content {
+  footer {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6)),
+      url('https://preview.colorlib.com/theme/steakshop/img/footer-bg.jpg')
+        center center no-repeat;
+    padding: 5rem 0rem;
+    display: flex;
+    justify-content: center;
+
+    @include addBreakPont('md') {
+      margin-right: 150px;
+    }
+
+    .aligner {
+      @include bodyMaxWidth;
+      text-align: center;
+    }
+
+    ul {
+      list-style: none;
+      display: flex;
+      justify-content: space-around;
+
+      li {
+        padding: 1.5rem 0;
+      }
+
+      a {
+        color: $paragraph-text-color;
+        text-transform: capitalize;
+        text-decoration: none;
+        transition: all 0.3s ease 0s;
+
+        &:hover {
+          color: #fff;
+        }
+      }
+    }
+
+    span {
+      color: $paragraph-text-color;
+    }
+  }
+}

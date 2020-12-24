@@ -1,0 +1,112 @@
+#content {
+  .header {
+    @include addBreakPont('md') {
+      background: url('https://preview.colorlib.com/theme/steakshop/img/banner/home-banner.jpg');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      width: 100%;
+      height: 100vh;
+      margin-right: 150px;
+    }
+
+    .navigation {
+      position: fixed;
+      right: -150px;
+      top: 0;
+      bottom: 0;
+      width: 150px;
+      z-index: 999;
+      padding-top: 1.5rem;
+      background-color: white;
+      display: flex;
+      flex-direction: column;
+      box-shadow: -6px 0px 20px rgba(0, 0, 0, 0.1);
+      transition: all 0.3s ease 0s;
+
+      .burgerMenu {
+        background: url('../img/1828747.svg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 17px;
+        height: 17px;
+
+        position: absolute;
+        right: 120px;
+        top: 10px;
+        transition: all 0.3s ease 0s;
+
+        &:hover {
+          @include pointer;
+        }
+
+        &.close {
+          top: 30px;
+          background: url('../img/130918.svg');
+          width: 29px;
+          height: 27px;
+          right: 180px;
+          top: 25px;
+        }
+      }
+
+      .branding {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 1.9rem;
+
+        .logo {
+          vertical-align: middle;
+        }
+      }
+
+      .nav {
+        list-style: none;
+
+        .nav-item {
+          padding: 0.9rem 0 0.9rem 1.2rem;
+          display: flex;
+          align-items: center;
+          transition: all 0.3s ease 0s;
+
+          .nav-link {
+            text-transform: capitalize;
+            font-size: 0.8rem;
+            color: #000;
+            text-decoration: none;
+          }
+          img {
+            padding-right: 1rem;
+            transition: all 0.3s ease 0s;
+          }
+
+          &.active,
+          &:hover {
+            @include pointer;
+            background: $main-reddish-color;
+            box-shadow: 0 20px 20px rgba(244, 47, 44, 0.1);
+
+            .nav-link {
+              color: #fff;
+            }
+
+            img {
+              filter: brightness(0) invert(1);
+            }
+          }
+        }
+      }
+
+      @include addBreakPont('md') {
+        right: 0px;
+        padding-top: 0;
+
+        .burgerMenu {
+          display: none;
+        }
+      }
+    }
+  }
+}
