@@ -1,0 +1,96 @@
+#content {
+  .restaurant_contact {
+    display: flex;
+    justify-content: center;
+
+    @include addBreakPont('md') {
+      margin-right: 150px;
+    }
+
+    .aligner {
+      width: 100%;
+      @include bodyMaxWidth;
+      padding: 5rem 0;
+    }
+
+    .contact-form {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-gap: 2rem;
+
+      @include addBreakPont('sm') {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      @include addBreakPont('lg') {
+        grid-template-columns: 1fr 2fr;
+      }
+
+      .restaurant-infos {
+        justify-self: center;
+
+        h4 {
+          @extend %h1Style;
+          font-size: 1.15rem;
+          margin-bottom: 0.4rem;
+        }
+        p {
+          @extend %pStyle;
+        }
+
+        & > div {
+          display: flex;
+
+          img {
+            margin-right: 1.5rem;
+          }
+        }
+      }
+
+      .sender-infos {
+        justify-self: center;
+        display: flex;
+        flex-direction: column;
+
+        .divider {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+
+          &:first-child {
+            align-items: stretch;
+          }
+
+          @include addBreakPont('lg') {
+            align-items: center;
+
+            &:first-child {
+              margin-right: 2rem;
+            }
+          }
+        }
+
+        .form-control {
+          padding: 0.6rem;
+          border: solid 1px #eee;
+          margin-bottom: 1rem;
+          border-radius: 3px;
+
+          &:focus {
+            outline: transparent;
+          }
+        }
+
+        button {
+          @extend %actionButtonStyle;
+          border-radius: 50px;
+          margin-left: auto;
+        }
+
+        @include addBreakPont('lg') {
+          flex-direction: row;
+        }
+      }
+    }
+  }
+}

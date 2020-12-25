@@ -1,8 +1,7 @@
 #content {
   footer {
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6)),
-      url('https://preview.colorlib.com/theme/steakshop/img/footer-bg.jpg')
-        center center no-repeat;
+      url('../img/footer-bg.jpg') center center no-repeat;
     padding: 5rem 0rem;
     display: flex;
     justify-content: center;
@@ -17,7 +16,6 @@
     }
 
     ul {
-      list-style: none;
       display: flex;
       justify-content: space-around;
 

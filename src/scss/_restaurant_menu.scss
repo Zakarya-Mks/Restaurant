@@ -1,0 +1,71 @@
+#content {
+  .restaurant_menu {
+    display: flex;
+    justify-content: center;
+    padding: 5rem 2rem;
+
+    @include addBreakPont('md') {
+      margin-right: 150px;
+    }
+
+    .aligner {
+      @include bodyMaxWidth;
+      width: 100%;
+
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      grid-row-gap: 4rem;
+      grid-column-gap: 8rem;
+
+      @include addBreakPont('sm') {
+        padding: 0 2.5rem;
+      }
+
+      @include addBreakPont('md') {
+        padding: 0 5rem;
+      }
+
+      @include addBreakPont('lg') {
+        grid-template-columns: repeat(2, 1fr);
+
+        padding: 0 0;
+      }
+
+      h1 {
+        @extend %h1Style;
+        margin-bottom: 3rem;
+        border-bottom: solid 1px #ddd;
+      }
+
+      h4 {
+        @extend %h1Style;
+        font-size: 1.15rem;
+        position: relative;
+
+        span {
+          position: absolute;
+          right: 0;
+        }
+
+        @include addBreakPont('lg') {
+          &::after {
+            display: inline;
+            content: '................................';
+            width: 100%;
+            overflow: hidden;
+          }
+        }
+      }
+
+      p {
+        color: $paragraph-text-color;
+      }
+
+      ul {
+        li {
+          margin-bottom: 2rem;
+        }
+      }
+    }
+  }
+}

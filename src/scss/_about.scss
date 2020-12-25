@@ -1,0 +1,51 @@
+#content {
+  .about_restaurant {
+    display: flex;
+    justify-content: center;
+    padding: 0 1rem;
+
+    @include addBreakPont('md') {
+      margin-right: 150px;
+      padding: 0 2rem;
+    }
+
+    .aligner {
+      width: 100%;
+      @include bodyMaxWidth;
+      padding: 5rem 0;
+    }
+
+    .about_section {
+      display: grid;
+      grid-template-columns: 1fr;
+
+      .about-left {
+        img {
+          @include img-fluid;
+        }
+      }
+
+      .about-right {
+        margin-top: 5rem;
+        h1 {
+          @extend %h1Style;
+          margin-bottom: 3rem;
+        }
+        p {
+          @extend %pStyle;
+          text-align: left;
+        }
+
+        @include addBreakPont('lg') {
+          margin-top: 0;
+
+          padding-left: 5rem;
+        }
+      }
+
+      @include addBreakPont('lg') {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+  }
+}

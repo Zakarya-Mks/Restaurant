@@ -1,6 +1,6 @@
 #content {
   .reservation_form {
-    background: url('https://preview.colorlib.com/theme/steakshop/img/reservation-bg.jpg');
+    background: url('../img/reservation-bg.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -64,6 +64,10 @@
           &:focus {
             outline: transparent;
           }
+        }
+
+        input[type='datetime-local'] {
+          color: $paragraph-text-color;
         }
 
         button {
