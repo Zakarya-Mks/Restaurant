@@ -1,7 +1,7 @@
 #content {
   .header {
     @include addBreakPont('md') {
-      background: url('../img/home-banner.png');
+      background: url('./img/home-banner.png');
       background-repeat: no-repeat;
       background-position: center;
       background-size: cover;
@@ -25,7 +25,7 @@
       transition: all 0.3s ease 0s;
 
       .burgerMenu {
-        background: url('../img/1828747.svg');
+        background: url('./img/1828747.svg');
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -43,7 +43,7 @@
 
         &.close {
           top: 30px;
-          background: url('../img/130918.svg');
+          background: url('./img/130918.svg');
           width: 29px;
           height: 27px;
           right: 180px;
