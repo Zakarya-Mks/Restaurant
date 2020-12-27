@@ -21,8 +21,9 @@ const domElements = (function () {
   const nav = document.querySelector('.nav');
   const allNavItems = document.querySelectorAll('.nav-item');
   const seeMenuBtn = document.querySelector('.seeMenuBtn');
+  const burgerMenu = document.querySelector('.burgerMenu');
 
-  return { content, nav, allNavItems, seeMenuBtn };
+  return { content, nav, allNavItems, seeMenuBtn, burgerMenu };
 })();
 
 let domListener = (function () {
@@ -31,6 +32,8 @@ let domListener = (function () {
       let menuItem = e.target.closest('.nav-item');
       _changerActiveMenuItem(menuItem);
       changeCurrentPage([...menuItem.children][1].textContent);
+
+      toggleMobileMenu();
     }
   };
 
@@ -63,7 +66,14 @@ let domListener = (function () {
     });
   };
 
-  return { navClick, changeCurrentPage };
+  const toggleMobileMenu = function () {
+    domElements.burgerMenu.classList.toggle('close');
+    domElements.burgerMenu.closest('.navigation').classList.toggle('show');
+  };
+
+  return { navClick, changeCurrentPage, toggleMobileMenu };
 })();
 
 domElements.nav.addEventListener('click', domListener.navClick);
+
+domElements.burgerMenu.addEventListener('click', domListener.toggleMobileMenu);

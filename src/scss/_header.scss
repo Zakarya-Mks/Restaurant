@@ -35,7 +35,7 @@
         position: absolute;
         right: 120px;
         top: 10px;
-        transition: all 0.3s ease 0s;
+        transition: right 0.3s ease 0s, top 0.3s ease 0s;
 
         &:hover {
           @include pointer;
@@ -70,21 +70,12 @@
           display: flex;
           align-items: center;
           transition: all 0.3s ease 0s;
-          // position: relative;
 
           .nav-link {
             text-transform: capitalize;
             font-size: 0.8rem;
             color: #000;
             text-decoration: none;
-            // position: absolute;
-            // left: 0;
-            // top: 0;
-            // right: 0;
-            // bottom: 0;
-            // display: flex;
-            // align-items: center;
-            // justify-content: center;
           }
           img {
             padding-right: 1rem;
@@ -106,6 +97,10 @@
             }
           }
         }
+      }
+
+      &.show {
+        right: 0;
       }
 
       @include addBreakPont('md') {
