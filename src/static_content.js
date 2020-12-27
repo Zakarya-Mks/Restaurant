@@ -18,7 +18,7 @@ const branding = HelperFunctions.createElementWithClass('div', 'branding');
 const logo = document.createElement('img');
 HelperFunctions.setAttributes(logo, {
   class: 'logo',
-  src: './img/logo.png',
+  src: 'img/logo.png',
   alt: 'logo',
 });
 branding.append(logo);
