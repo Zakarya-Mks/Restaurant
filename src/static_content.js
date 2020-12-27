@@ -18,7 +18,7 @@ const branding = HelperFunctions.createElementWithClass('div', 'branding');
 const logo = document.createElement('img');
 HelperFunctions.setAttributes(logo, {
   class: 'logo',
-  src: 'img/logo.png',
+  src: './img/logo.png',
   alt: 'logo',
 });
 branding.append(logo);
@@ -27,10 +27,10 @@ const navMenu = HelperFunctions.createElementWithClass('ul', 'nav');
 
 //providing attributes for a helper function to creat images and return an array
 const images = HelperFunctions.creatImages([
-  { src: '../img/nav-icon1.png', alt: 'restaurant icon' },
-  { src: '../img/nav-icon3.png', alt: 'menu icon' },
-  { src: '../img/nav-icon2.png', alt: 'about icon' },
-  { src: '../img/nav-icon8.png', alt: 'contact icon' },
+  { src: './img/nav-icon1.png', alt: 'restaurant icon' },
+  { src: './img/nav-icon3.png', alt: 'menu icon' },
+  { src: './img/nav-icon2.png', alt: 'about icon' },
+  { src: './img/nav-icon8.png', alt: 'contact icon' },
 ]);
 
 //providing attributes for a helper function to creat links and return an array
