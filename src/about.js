@@ -17,9 +17,7 @@ const about_section = HelperFunctions.createElementWithClass(
 
 const about_left = HelperFunctions.createElementWithClass('div', 'about-left');
 
-const about_left_img = HelperFunctions.creatImages([
-  { src: '../img/chef1.jpg' },
-]);
+const about_left_img = HelperFunctions.creatImages([{ src: 'img/chef1.jpg' }]);
 
 about_left.append(about_left_img[0]);
 
@@ -50,7 +48,7 @@ reprehenderit eveniet maxime commodi pariatur?`;
 const about_right_paragraphs = HelperFunctions.creatParagraphs([p1, p2, p3]);
 
 const about_right_img = HelperFunctions.creatImages([
-  { src: '../img/signature.png' },
+  { src: 'img/signature.png' },
 ]);
 
 about_right.append(about_right_h1);

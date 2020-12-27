@@ -58,8 +58,8 @@ const breakfast_menu_img_container = HelperFunctions.createElementWithClass(
 );
 
 let breakfast_menu_imageArr = HelperFunctions.creatImages([
-  { src: '../img/food1.jpg', alt: 'hot cop of coffee' },
-  { src: '../img/food2.png', alt: 'a dish of potato with beans' },
+  { src: 'img/food1.jpg', alt: 'hot cop of coffee' },
+  { src: 'img/food2.png', alt: 'a dish of potato with beans' },
 ]);
 
 breakfast_menu_imageArr.forEach((el) =>
@@ -98,8 +98,8 @@ const lunch_menu_img_container = HelperFunctions.createElementWithClass(
 );
 
 let lunch_menu_imageArr = HelperFunctions.creatImages([
-  { src: '../img/food3.jpg', alt: 'a crispy pancake' },
-  { src: '../img/food4.png', alt: 'steak in a plate' },
+  { src: 'img/food3.jpg', alt: 'a crispy pancake' },
+  { src: 'img/food4.png', alt: 'steak in a plate' },
 ]);
 
 lunch_menu_imageArr.forEach((el) => lunch_menu_img_container.append(el));
@@ -189,11 +189,11 @@ const in_association_with_brandings = HelperFunctions.createElementWithClass(
 );
 
 const in_association_with_brandings_images = HelperFunctions.creatImages([
-  { src: '../img/logo1.png' },
-  { src: '../img/logo2.png' },
-  { src: '../img/logo3.png' },
-  { src: '../img/logo4.png' },
-  { src: '../img/logo5.png' },
+  { src: 'img/logo1.png' },
+  { src: 'img/logo2.png' },
+  { src: 'img/logo3.png' },
+  { src: 'img/logo4.png' },
+  { src: 'img/logo5.png' },
 ]);
 
 in_association_with_brandings_images.forEach((el) =>
