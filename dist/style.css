@@ -1,1 +1,784 @@
-html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:"";content:none}table{border-collapse:collapse;border-spacing:0}@media screen and (min-width: 768px){#content .header{background:url("./img/home-banner.png");background-repeat:no-repeat;background-position:center;background-size:cover;width:100%;height:100vh;margin-right:150px}}#content .header .navigation{position:fixed;right:-150px;top:0;bottom:0;width:150px;z-index:999;padding-top:1.5rem;background-color:#fff;display:flex;flex-direction:column;box-shadow:-6px 0px 20px rgba(0,0,0,.1);transition:all .3s ease 0s}#content .header .navigation .burgerMenu{background:url("./img/1828747.svg");background-position:center;background-repeat:no-repeat;background-size:cover;width:17px;height:17px;position:absolute;right:120px;top:10px;transition:right .3s ease 0s,top .3s ease 0s}#content .header .navigation .burgerMenu:hover{cursor:pointer}#content .header .navigation .burgerMenu.close{top:30px;background:url("./img/130918.svg");width:29px;height:27px;right:180px;top:25px}#content .header .navigation .branding{display:flex;align-items:center;justify-content:center;padding:1.9rem}#content .header .navigation .branding .logo{vertical-align:middle}#content .header .navigation .nav{list-style:none}#content .header .navigation .nav .nav-item{padding:.9rem 0 .9rem 1.2rem;display:flex;align-items:center;transition:all .3s ease 0s}#content .header .navigation .nav .nav-item .nav-link{text-transform:capitalize;font-size:.8rem;color:#000;text-decoration:none}#content .header .navigation .nav .nav-item img{padding-right:1rem;transition:all .3s ease 0s}#content .header .navigation .nav .nav-item.active,#content .header .navigation .nav .nav-item:hover{cursor:pointer;background:#f42f2c;box-shadow:0 20px 20px rgba(244,47,44,.1)}#content .header .navigation .nav .nav-item.active .nav-link,#content .header .navigation .nav .nav-item:hover .nav-link{color:#fff}#content .header .navigation .nav .nav-item.active img,#content .header .navigation .nav .nav-item:hover img{filter:brightness(0) invert(1)}#content .header .navigation.show{right:0}@media screen and (min-width: 768px){#content .header .navigation{right:0px;padding-top:0}#content .header .navigation .burgerMenu{display:none}}#content .restaurant_contact .contact-form .sender-infos button,#content .reservation_form .form-section form button,#content .restaurant_presentation .breakfast_menu_presentation .left-section button{text-transform:capitalize;background:transparent;border:solid 1px #f42f2c;line-height:1.5;padding:.5rem 1rem;margin-top:.5rem;font-size:1rem;border-radius:2px;transition:background .3s ease 0s,color .3s ease 0s}#content .restaurant_contact .contact-form .sender-infos button:hover,#content .reservation_form .form-section form button:hover,#content .restaurant_presentation .breakfast_menu_presentation .left-section button:hover{cursor:pointer;background:#f42f2c;color:#fff}#content .restaurant_contact .contact-form .sender-infos button:focus,#content .reservation_form .form-section form button:focus,#content .restaurant_presentation .breakfast_menu_presentation .left-section button:focus{outline:none}#content .about_restaurant .about_section .about-right h1,#content .restaurant_contact .contact-form .restaurant-infos h4,#content .restaurant_menu .aligner h4,#content .restaurant_menu .aligner h1,#content .in_association_with h1,#content .reservation_form .form-section h1,#content .restaurant_presentation .lunch_menu_presentation .left-section h1,#content .restaurant_presentation .breakfast_menu_presentation .left-section h1{font-size:2rem;font-family:"Pacifico",cursive;font-weight:100;margin-bottom:1rem}#content .about_restaurant .about_section .about-right p,#content .restaurant_contact .contact-form .restaurant-infos p,#content .in_association_with p,#content .restaurant_presentation .lunch_menu_presentation .left-section p,#content .restaurant_presentation .breakfast_menu_presentation .left-section p{font-size:.9rem;color:#777;line-height:28px;margin-bottom:1rem;text-align:start}#content .restaurant_presentation{padding:3.5rem 0;display:flex;justify-content:center}#content .restaurant_presentation .aligner{max-width:1140px}#content .restaurant_presentation .breakfast_menu_presentation{display:flex;padding-bottom:1rem}#content .restaurant_presentation .breakfast_menu_presentation .left-section{flex:1 1 50%;display:flex;flex-direction:column;justify-content:center;align-items:flex-start;padding:0 2rem}@media screen and (min-width: 576px){#content .restaurant_presentation .breakfast_menu_presentation .left-section{padding:0 3rem}}@media screen and (min-width: 768px){#content .restaurant_presentation .breakfast_menu_presentation .left-section{padding:0 10rem 0 6rem}}@media screen and (min-width: 992px){#content .restaurant_presentation .breakfast_menu_presentation .left-section{padding:0 7rem 0 2rem}}@media screen and (min-width: 1200px){#content .restaurant_presentation .breakfast_menu_presentation .left-section{padding:0 10rem 0 2rem}}#content .restaurant_presentation .breakfast_menu_presentation .right-section{flex:1 1 50%;display:none;align-items:center;position:relative}#content .restaurant_presentation .breakfast_menu_presentation .right-section .img-container{position:relative}#content .restaurant_presentation .breakfast_menu_presentation .right-section .img-container img{max-width:100%;height:auto}#content .restaurant_presentation .breakfast_menu_presentation .right-section .img-container img:nth-child(2){position:absolute;left:-20%;z-index:999}@media screen and (min-width: 992px){#content .restaurant_presentation .breakfast_menu_presentation .right-section{display:flex;padding:0 1rem}#content .restaurant_presentation .breakfast_menu_presentation .right-section img:nth-child(2){bottom:0px}}@media screen and (min-width: 1200px){#content .restaurant_presentation .breakfast_menu_presentation .right-section{padding:0 2rem}#content .restaurant_presentation .breakfast_menu_presentation .right-section img:nth-child(2){bottom:20px}}@media screen and (min-width: 768px){#content .restaurant_presentation .breakfast_menu_presentation{padding-bottom:5rem}}#content .restaurant_presentation .lunch_menu_presentation{display:flex;flex-direction:row-reverse}#content .restaurant_presentation .lunch_menu_presentation .left-section{flex:1 1 50%;display:flex;flex-direction:column;justify-content:center;padding:0 2rem}#content .restaurant_presentation .lunch_menu_presentation .left-section h1{margin-top:2rem}@media screen and (min-width: 576px){#content .restaurant_presentation .lunch_menu_presentation .left-section{padding:0 3rem}}@media screen and (min-width: 768px){#content .restaurant_presentation .lunch_menu_presentation .left-section{padding:0 10rem 0 6rem}}@media screen and (min-width: 992px){#content .restaurant_presentation .lunch_menu_presentation .left-section{padding:0 2rem 0 7rem}}@media screen and (min-width: 1200px){#content .restaurant_presentation .lunch_menu_presentation .left-section{padding:0 2rem 0 10rem}}#content .restaurant_presentation .lunch_menu_presentation .right-section{flex:1 1 50%;display:none;align-items:center}#content .restaurant_presentation .lunch_menu_presentation .right-section .img-container{position:relative}#content .restaurant_presentation .lunch_menu_presentation .right-section .img-container img{max-width:100%;height:auto}#content .restaurant_presentation .lunch_menu_presentation .right-section .img-container img:nth-child(2){position:absolute;z-index:999;right:-20%;z-index:999}@media screen and (min-width: 992px){#content .restaurant_presentation .lunch_menu_presentation .right-section{display:flex;padding:0 1rem}#content .restaurant_presentation .lunch_menu_presentation .right-section img:nth-child(2){top:30px}}@media screen and (min-width: 1200px){#content .restaurant_presentation .lunch_menu_presentation .right-section{padding:0 2rem}#content .restaurant_presentation .lunch_menu_presentation .right-section img:nth-child(2){top:100px}}@media screen and (min-width: 768px){#content .restaurant_presentation{margin-right:150px !important;padding:5rem 0}}#content .reservation_form{background:url("./img/reservation-bg.jpg");background-position:center;background-size:cover;background-repeat:no-repeat;min-height:600px;margin-bottom:150px}#content .reservation_form .aligner{max-width:1140px;position:relative;margin-left:auto;margin-right:auto}#content .reservation_form .form-section{position:absolute;top:100px;left:50%;transform:translateX(-50%);width:95%}@media screen and (min-width: 576px){#content .reservation_form .form-section{width:90%}}@media screen and (min-width: 768px){#content .reservation_form .form-section{width:80%}}@media screen and (min-width: 992px){#content .reservation_form .form-section{width:50%;right:1rem;left:auto;transform:translateX(0)}}@media screen and (min-width: 1200px){#content .reservation_form .form-section{width:40%;right:2rem}}#content .reservation_form .form-section form{display:flex;flex-direction:column;align-items:center;padding:70px 50px;background-color:#fff;box-shadow:0 20px 50px rgba(0,0,0,.1);font-size:.8rem}#content .reservation_form .form-section form input{width:100%;padding:1rem;border:none;border-bottom:solid 1px #eee;margin-bottom:1rem}#content .reservation_form .form-section form input:focus{outline:transparent}#content .reservation_form .form-section form input[type=datetime-local]{color:#777}@media screen and (min-width: 768px){#content .reservation_form{margin-right:150px}}#content .in_association_with{margin:15rem 0 5rem 0;display:flex;justify-content:center}#content .in_association_with .aligner{max-width:1140px;display:flex;flex-direction:column;align-items:center}#content .in_association_with p{width:90%;text-align:center}@media screen and (min-width: 768px){#content .in_association_with p{width:70%}}@media screen and (min-width: 992px){#content .in_association_with p{width:50%}}#content .in_association_with .brandings{display:flex;justify-content:space-around;width:100%;margin-top:2rem;display:grid;grid-template-columns:repeat(2, minmax(150px, 1fr));justify-items:center;grid-row-gap:30px}@media screen and (min-width: 576px){#content .in_association_with .brandings{grid-template-columns:repeat(3, minmax(150px, 1fr))}}@media screen and (min-width: 992px){#content .in_association_with .brandings{margin-top:5rem;grid-template-columns:repeat(5, minmax(150px, 1fr))}}#content .in_association_with .brandings img{grid-column:span 1;opacity:.4;cursor:pointer;transition:opacity .3s ease 0s}#content .in_association_with .brandings img:hover{opacity:1}@media screen and (min-width: 768px){#content .in_association_with{margin-right:150px}}#content .restaurant_menu{display:flex;justify-content:center;padding:5rem 2rem}@media screen and (min-width: 768px){#content .restaurant_menu{margin-right:150px}}#content .restaurant_menu .aligner{max-width:1140px;width:100%;display:grid;grid-template-columns:repeat(1, 1fr);grid-row-gap:4rem;grid-column-gap:8rem}@media screen and (min-width: 576px){#content .restaurant_menu .aligner{padding:0 2.5rem}}@media screen and (min-width: 768px){#content .restaurant_menu .aligner{padding:0 5rem}}@media screen and (min-width: 992px){#content .restaurant_menu .aligner{grid-template-columns:repeat(2, 1fr);padding:0 0}}#content .restaurant_menu .aligner h1{margin-bottom:3rem;border-bottom:solid 1px #ddd}#content .restaurant_menu .aligner h4{font-size:1.15rem;position:relative}#content .restaurant_menu .aligner h4 span{position:absolute;right:0}@media screen and (min-width: 992px){#content .restaurant_menu .aligner h4::after{display:inline;content:"................................";width:100%;overflow:hidden}}#content .restaurant_menu .aligner p{color:#777}#content .restaurant_menu .aligner ul li{margin-bottom:2rem}#content .restaurant_contact{display:flex;justify-content:center}@media screen and (min-width: 768px){#content .restaurant_contact{margin-right:150px}}#content .restaurant_contact .aligner{width:100%;max-width:1140px;padding:5rem 0}#content .restaurant_contact .contact-form{display:grid;grid-template-columns:1fr;grid-gap:2rem}@media screen and (min-width: 576px){#content .restaurant_contact .contact-form{grid-template-columns:1fr 1fr}}@media screen and (min-width: 992px){#content .restaurant_contact .contact-form{grid-template-columns:1fr 2fr}}#content .restaurant_contact .contact-form .restaurant-infos{justify-self:center}#content .restaurant_contact .contact-form .restaurant-infos h4{font-size:1.15rem;margin-bottom:.4rem}#content .restaurant_contact .contact-form .restaurant-infos>div{display:flex}#content .restaurant_contact .contact-form .restaurant-infos>div img{margin-right:1.5rem}#content .restaurant_contact .contact-form .sender-infos{justify-self:center;display:flex;flex-direction:column}#content .restaurant_contact .contact-form .sender-infos .divider{display:flex;flex-direction:column;align-items:flex-start}#content .restaurant_contact .contact-form .sender-infos .divider:first-child{align-items:stretch}@media screen and (min-width: 992px){#content .restaurant_contact .contact-form .sender-infos .divider{align-items:center}#content .restaurant_contact .contact-form .sender-infos .divider:first-child{margin-right:2rem}}#content .restaurant_contact .contact-form .sender-infos .form-control{padding:.6rem;border:solid 1px #eee;margin-bottom:1rem;border-radius:3px}#content .restaurant_contact .contact-form .sender-infos .form-control:focus{outline:transparent}#content .restaurant_contact .contact-form .sender-infos button{border-radius:50px;margin-left:auto}@media screen and (min-width: 992px){#content .restaurant_contact .contact-form .sender-infos{flex-direction:row}}#content .about_restaurant{display:flex;justify-content:center;padding:0 1rem}@media screen and (min-width: 768px){#content .about_restaurant{margin-right:150px;padding:0 2rem}}#content .about_restaurant .aligner{width:100%;max-width:1140px;padding:5rem 0}#content .about_restaurant .about_section{display:grid;grid-template-columns:1fr}#content .about_restaurant .about_section .about-left img{max-width:100%;height:auto}#content .about_restaurant .about_section .about-right{margin-top:5rem}#content .about_restaurant .about_section .about-right h1{margin-bottom:3rem}#content .about_restaurant .about_section .about-right p{text-align:left}@media screen and (min-width: 992px){#content .about_restaurant .about_section .about-right{margin-top:0;padding-left:5rem}}@media screen and (min-width: 992px){#content .about_restaurant .about_section{grid-template-columns:1fr 1fr}}#content footer{background:linear-gradient(180deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6)),url("./img/footer-bg.jpg") center center no-repeat;padding:5rem 0rem;display:flex;justify-content:center}@media screen and (min-width: 768px){#content footer{margin-right:150px}}#content footer .aligner{max-width:1140px;text-align:center}#content footer ul{display:flex;justify-content:space-around}#content footer ul li{padding:1.5rem 0}#content footer ul a{color:#777;text-transform:capitalize;text-decoration:none;transition:all .3s ease 0s}#content footer ul a:hover{color:#fff;cursor:pointer}#content footer span{color:#777}/*# sourceMappingURL=style.css.map */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@media screen and (min-width: 768px) {
+  #content .header {
+    background: url("./img/home-banner.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    margin-right: 150px;
+  }
+}
+#content .header .navigation {
+  position: fixed;
+  right: -150px;
+  top: 0;
+  bottom: 0;
+  width: 150px;
+  z-index: 999;
+  padding-top: 1.5rem;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  box-shadow: -6px 0px 20px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+}
+#content .header .navigation .burgerMenu {
+  background: url("./img/1828747.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 17px;
+  height: 17px;
+  position: absolute;
+  right: 120px;
+  top: 10px;
+  transition: right 0.3s ease 0s, top 0.3s ease 0s;
+}
+#content .header .navigation .burgerMenu:hover {
+  cursor: pointer;
+}
+#content .header .navigation .burgerMenu.close {
+  top: 30px;
+  background: url("./img/130918.svg");
+  width: 29px;
+  height: 27px;
+  right: 180px;
+  top: 25px;
+}
+#content .header .navigation .branding {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.9rem;
+}
+#content .header .navigation .branding .logo {
+  vertical-align: middle;
+}
+#content .header .navigation .nav {
+  list-style: none;
+}
+#content .header .navigation .nav .nav-item {
+  padding: 0.9rem 0 0.9rem 1.2rem;
+  display: flex;
+  align-items: center;
+  transition: all 0.3s ease 0s;
+}
+#content .header .navigation .nav .nav-item .nav-link {
+  text-transform: capitalize;
+  font-size: 0.8rem;
+  color: #000;
+  text-decoration: none;
+}
+#content .header .navigation .nav .nav-item img {
+  padding-right: 1rem;
+  transition: all 0.3s ease 0s;
+}
+#content .header .navigation .nav .nav-item.active, #content .header .navigation .nav .nav-item:hover {
+  cursor: pointer;
+  background: #f42f2c;
+  box-shadow: 0 20px 20px rgba(244, 47, 44, 0.1);
+}
+#content .header .navigation .nav .nav-item.active .nav-link, #content .header .navigation .nav .nav-item:hover .nav-link {
+  color: #fff;
+}
+#content .header .navigation .nav .nav-item.active img, #content .header .navigation .nav .nav-item:hover img {
+  filter: brightness(0) invert(1);
+}
+#content .header .navigation.show {
+  right: 0;
+}
+@media screen and (min-width: 768px) {
+  #content .header .navigation {
+    right: 0px;
+    padding-top: 0;
+  }
+  #content .header .navigation .burgerMenu {
+    display: none;
+  }
+}
+
+#content .restaurant_contact .contact-form .sender-infos button, #content .reservation_form .form-section form button, #content .restaurant_presentation .breakfast_menu_presentation .left-section button {
+  text-transform: capitalize;
+  background: transparent;
+  border: solid 1px #f42f2c;
+  line-height: 1.5;
+  padding: 0.5rem 1rem;
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  border-radius: 2px;
+  transition: background 0.3s ease 0s, color 0.3s ease 0s;
+}
+#content .restaurant_contact .contact-form .sender-infos button:hover, #content .reservation_form .form-section form button:hover, #content .restaurant_presentation .breakfast_menu_presentation .left-section button:hover {
+  cursor: pointer;
+  background: #f42f2c;
+  color: #fff;
+}
+#content .restaurant_contact .contact-form .sender-infos button:focus, #content .reservation_form .form-section form button:focus, #content .restaurant_presentation .breakfast_menu_presentation .left-section button:focus {
+  outline: none;
+}
+
+#content .about_restaurant .about_section .about-right h1, #content .restaurant_contact .contact-form .restaurant-infos h4, #content .restaurant_menu .aligner h4, #content .restaurant_menu .aligner h1, #content .in_association_with h1, #content .reservation_form .form-section h1, #content .restaurant_presentation .lunch_menu_presentation .left-section h1, #content .restaurant_presentation .breakfast_menu_presentation .left-section h1 {
+  font-size: 2rem;
+  font-family: "Pacifico", cursive;
+  font-weight: 100;
+  margin-bottom: 1rem;
+}
+
+#content .about_restaurant .about_section .about-right p, #content .restaurant_contact .contact-form .restaurant-infos p, #content .in_association_with p, #content .restaurant_presentation .lunch_menu_presentation .left-section p, #content .restaurant_presentation .breakfast_menu_presentation .left-section p {
+  font-size: 0.9rem;
+  color: #777777;
+  line-height: 28px;
+  margin-bottom: 1rem;
+  text-align: start;
+}
+
+#content .restaurant_presentation {
+  padding: 5rem 0;
+  display: flex;
+  justify-content: center;
+}
+#content .restaurant_presentation .aligner {
+  max-width: 1140px;
+}
+#content .restaurant_presentation .breakfast_menu_presentation {
+  display: flex;
+  padding-bottom: 1rem;
+}
+#content .restaurant_presentation .breakfast_menu_presentation .left-section {
+  flex: 1 1 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0 2rem;
+}
+@media screen and (min-width: 576px) {
+  #content .restaurant_presentation .breakfast_menu_presentation .left-section {
+    padding: 0 3rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  #content .restaurant_presentation .breakfast_menu_presentation .left-section {
+    padding: 0 10rem 0 6rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  #content .restaurant_presentation .breakfast_menu_presentation .left-section {
+    padding: 0 7rem 0 2rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  #content .restaurant_presentation .breakfast_menu_presentation .left-section {
+    padding: 0 10rem 0 2rem;
+  }
+}
+#content .restaurant_presentation .breakfast_menu_presentation .right-section {
+  flex: 1 1 50%;
+  display: none;
+  align-items: center;
+  position: relative;
+}
+#content .restaurant_presentation .breakfast_menu_presentation .right-section .img-container {
+  position: relative;
+}
+#content .restaurant_presentation .breakfast_menu_presentation .right-section .img-container img {
+  max-width: 100%;
+  height: auto;
+}
+#content .restaurant_presentation .breakfast_menu_presentation .right-section .img-container img:nth-child(2) {
+  position: absolute;
+  left: -20%;
+  z-index: 999;
+}
+@media screen and (min-width: 992px) {
+  #content .restaurant_presentation .breakfast_menu_presentation .right-section {
+    display: flex;
+    padding: 0 1rem;
+  }
+  #content .restaurant_presentation .breakfast_menu_presentation .right-section img:nth-child(2) {
+    bottom: 0px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  #content .restaurant_presentation .breakfast_menu_presentation .right-section {
+    padding: 0 2rem;
+  }
+  #content .restaurant_presentation .breakfast_menu_presentation .right-section img:nth-child(2) {
+    bottom: 20px;
+  }
+}
+@media screen and (min-width: 768px) {
+  #content .restaurant_presentation .breakfast_menu_presentation {
+    padding-bottom: 5rem;
+  }
+}
+#content .restaurant_presentation .lunch_menu_presentation {
+  display: flex;
+  flex-direction: row-reverse;
+}
+#content .restaurant_presentation .lunch_menu_presentation .left-section {
+  flex: 1 1 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 2rem;
+}
+#content .restaurant_presentation .lunch_menu_presentation .left-section h1 {
+  margin-top: 2rem;
+}
+@media screen and (min-width: 576px) {
+  #content .restaurant_presentation .lunch_menu_presentation .left-section {
+    padding: 0 3rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  #content .restaurant_presentation .lunch_menu_presentation .left-section {
+    padding: 0 10rem 0 6rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  #content .restaurant_presentation .lunch_menu_presentation .left-section {
+    padding: 0 2rem 0 7rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  #content .restaurant_presentation .lunch_menu_presentation .left-section {
+    padding: 0 2rem 0 10rem;
+  }
+}
+#content .restaurant_presentation .lunch_menu_presentation .right-section {
+  flex: 1 1 50%;
+  display: none;
+  align-items: center;
+}
+#content .restaurant_presentation .lunch_menu_presentation .right-section .img-container {
+  position: relative;
+}
+#content .restaurant_presentation .lunch_menu_presentation .right-section .img-container img {
+  max-width: 100%;
+  height: auto;
+}
+#content .restaurant_presentation .lunch_menu_presentation .right-section .img-container img:nth-child(2) {
+  position: absolute;
+  z-index: 999;
+  right: -20%;
+  z-index: 999;
+}
+@media screen and (min-width: 992px) {
+  #content .restaurant_presentation .lunch_menu_presentation .right-section {
+    display: flex;
+    padding: 0 1rem;
+  }
+  #content .restaurant_presentation .lunch_menu_presentation .right-section img:nth-child(2) {
+    top: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  #content .restaurant_presentation .lunch_menu_presentation .right-section {
+    padding: 0 2rem;
+  }
+  #content .restaurant_presentation .lunch_menu_presentation .right-section img:nth-child(2) {
+    top: 100px;
+  }
+}
+@media screen and (min-width: 768px) {
+  #content .restaurant_presentation {
+    margin-right: 150px !important;
+  }
+}
+
+#content .reservation_form {
+  background: url("./img/reservation-bg.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 600px;
+  margin-bottom: 150px;
+}
+#content .reservation_form .aligner {
+  max-width: 1140px;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+#content .reservation_form .form-section {
+  position: absolute;
+  top: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 95%;
+}
+@media screen and (min-width: 576px) {
+  #content .reservation_form .form-section {
+    width: 90%;
+  }
+}
+@media screen and (min-width: 768px) {
+  #content .reservation_form .form-section {
+    width: 80%;
+  }
+}
+@media screen and (min-width: 992px) {
+  #content .reservation_form .form-section {
+    width: 50%;
+    right: 1rem;
+    left: auto;
+    transform: translateX(0);
+  }
+}
+@media screen and (min-width: 1200px) {
+  #content .reservation_form .form-section {
+    width: 40%;
+    right: 2rem;
+  }
+}
+#content .reservation_form .form-section form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 70px 50px;
+  background-color: #fff;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.1);
+  font-size: 0.8rem;
+}
+#content .reservation_form .form-section form input {
+  width: 100%;
+  padding: 1rem;
+  border: none;
+  border-bottom: solid 1px #eee;
+  margin-bottom: 1rem;
+}
+#content .reservation_form .form-section form input:focus {
+  outline: transparent;
+}
+#content .reservation_form .form-section form input[type=datetime-local] {
+  color: #777777;
+}
+@media screen and (min-width: 768px) {
+  #content .reservation_form {
+    margin-right: 150px;
+  }
+}
+
+#content .in_association_with {
+  margin: 15rem 0 5rem 0;
+  display: flex;
+  justify-content: center;
+}
+#content .in_association_with .aligner {
+  max-width: 1140px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#content .in_association_with p {
+  width: 90%;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  #content .in_association_with p {
+    width: 70%;
+  }
+}
+@media screen and (min-width: 992px) {
+  #content .in_association_with p {
+    width: 50%;
+  }
+}
+#content .in_association_with .brandings {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(150px, 1fr));
+  justify-items: center;
+  grid-row-gap: 30px;
+}
+@media screen and (min-width: 576px) {
+  #content .in_association_with .brandings {
+    grid-template-columns: repeat(3, minmax(150px, 1fr));
+  }
+}
+@media screen and (min-width: 992px) {
+  #content .in_association_with .brandings {
+    margin-top: 5rem;
+    grid-template-columns: repeat(5, minmax(150px, 1fr));
+  }
+}
+#content .in_association_with .brandings img {
+  grid-column: span 1;
+  opacity: 0.4;
+  cursor: pointer;
+  transition: opacity 0.3s ease 0s;
+}
+#content .in_association_with .brandings img:hover {
+  opacity: 1;
+}
+@media screen and (min-width: 768px) {
+  #content .in_association_with {
+    margin-right: 150px;
+  }
+}
+
+#content .restaurant_menu {
+  display: flex;
+  justify-content: center;
+  padding: 5rem 2rem;
+}
+@media screen and (min-width: 768px) {
+  #content .restaurant_menu {
+    margin-right: 150px;
+  }
+}
+#content .restaurant_menu .aligner {
+  max-width: 1140px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-row-gap: 4rem;
+  grid-column-gap: 8rem;
+}
+@media screen and (min-width: 576px) {
+  #content .restaurant_menu .aligner {
+    padding: 0 2.5rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  #content .restaurant_menu .aligner {
+    padding: 0 5rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  #content .restaurant_menu .aligner {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0 0;
+  }
+}
+#content .restaurant_menu .aligner h1 {
+  margin-bottom: 3rem;
+  border-bottom: solid 1px #ddd;
+}
+#content .restaurant_menu .aligner h4 {
+  font-size: 1.15rem;
+  position: relative;
+}
+#content .restaurant_menu .aligner h4 span {
+  position: absolute;
+  right: 0;
+}
+@media screen and (min-width: 992px) {
+  #content .restaurant_menu .aligner h4::after {
+    display: inline;
+    content: "................................";
+    width: 100%;
+    overflow: hidden;
+  }
+}
+#content .restaurant_menu .aligner p {
+  color: #777777;
+}
+#content .restaurant_menu .aligner ul li {
+  margin-bottom: 2rem;
+}
+
+#content .restaurant_contact {
+  display: flex;
+  justify-content: center;
+}
+@media screen and (min-width: 768px) {
+  #content .restaurant_contact {
+    margin-right: 150px;
+  }
+}
+#content .restaurant_contact .aligner {
+  width: 100%;
+  max-width: 1140px;
+  padding: 5rem 0;
+}
+#content .restaurant_contact .contact-form {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 2rem;
+}
+@media screen and (min-width: 576px) {
+  #content .restaurant_contact .contact-form {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (min-width: 992px) {
+  #content .restaurant_contact .contact-form {
+    grid-template-columns: 1fr 2fr;
+  }
+}
+#content .restaurant_contact .contact-form .restaurant-infos {
+  justify-self: center;
+}
+#content .restaurant_contact .contact-form .restaurant-infos h4 {
+  font-size: 1.15rem;
+  margin-bottom: 0.4rem;
+}
+#content .restaurant_contact .contact-form .restaurant-infos > div {
+  display: flex;
+}
+#content .restaurant_contact .contact-form .restaurant-infos > div img {
+  margin-right: 1.5rem;
+}
+#content .restaurant_contact .contact-form .sender-infos {
+  justify-self: center;
+  display: flex;
+  flex-direction: column;
+}
+#content .restaurant_contact .contact-form .sender-infos .divider {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+#content .restaurant_contact .contact-form .sender-infos .divider:first-child {
+  align-items: stretch;
+}
+@media screen and (min-width: 992px) {
+  #content .restaurant_contact .contact-form .sender-infos .divider {
+    align-items: center;
+  }
+  #content .restaurant_contact .contact-form .sender-infos .divider:first-child {
+    margin-right: 2rem;
+  }
+}
+#content .restaurant_contact .contact-form .sender-infos .form-control {
+  padding: 0.6rem;
+  border: solid 1px #eee;
+  margin-bottom: 1rem;
+  border-radius: 3px;
+}
+#content .restaurant_contact .contact-form .sender-infos .form-control:focus {
+  outline: transparent;
+}
+#content .restaurant_contact .contact-form .sender-infos button {
+  border-radius: 50px;
+  margin-left: auto;
+}
+@media screen and (min-width: 992px) {
+  #content .restaurant_contact .contact-form .sender-infos {
+    flex-direction: row;
+  }
+}
+
+#content .about_restaurant {
+  display: flex;
+  justify-content: center;
+  padding: 0 1rem;
+}
+@media screen and (min-width: 768px) {
+  #content .about_restaurant {
+    margin-right: 150px;
+    padding: 0 2rem;
+  }
+}
+#content .about_restaurant .aligner {
+  width: 100%;
+  max-width: 1140px;
+  padding: 5rem 0;
+}
+#content .about_restaurant .about_section {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+#content .about_restaurant .about_section .about-left img {
+  max-width: 100%;
+  height: auto;
+}
+#content .about_restaurant .about_section .about-right {
+  margin-top: 5rem;
+}
+#content .about_restaurant .about_section .about-right h1 {
+  margin-bottom: 3rem;
+}
+#content .about_restaurant .about_section .about-right p {
+  text-align: left;
+}
+@media screen and (min-width: 992px) {
+  #content .about_restaurant .about_section .about-right {
+    margin-top: 0;
+    padding-left: 5rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  #content .about_restaurant .about_section {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+#content footer {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6)), url("./img/footer-bg.jpg") center center no-repeat;
+  padding: 5rem 0rem;
+  display: flex;
+  justify-content: center;
+}
+@media screen and (min-width: 768px) {
+  #content footer {
+    margin-right: 150px;
+  }
+}
+#content footer .aligner {
+  max-width: 1140px;
+  text-align: center;
+}
+#content footer ul {
+  display: flex;
+  justify-content: space-around;
+}
+#content footer ul li {
+  padding: 1.5rem 0;
+}
+#content footer ul a {
+  color: #777777;
+  text-transform: capitalize;
+  text-decoration: none;
+  transition: all 0.3s ease 0s;
+}
+#content footer ul a:hover {
+  color: #fff;
+  cursor: pointer;
+}
+#content footer span {
+  color: #777777;
+}
+
+/*# sourceMappingURL=style.css.map */
