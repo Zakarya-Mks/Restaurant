@@ -24,20 +24,20 @@
       }
 
       a {
-        color: $paragraph-text-color;
+        color: #fff;
         text-transform: capitalize;
         text-decoration: none;
         transition: all 0.3s ease 0s;
 
         &:hover {
-          color: #fff;
+          color: $main-reddish-color;
           @include pointer;
         }
       }
     }
 
     span {
-      color: $paragraph-text-color;
+      color: #ddd;
     }
   }
 }

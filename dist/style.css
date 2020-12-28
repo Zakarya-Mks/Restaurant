@@ -768,17 +768,17 @@ table {
   padding: 1.5rem 0;
 }
 #content footer ul a {
-  color: #777777;
+  color: #fff;
   text-transform: capitalize;
   text-decoration: none;
   transition: all 0.3s ease 0s;
 }
 #content footer ul a:hover {
-  color: #fff;
+  color: #f42f2c;
   cursor: pointer;
 }
 #content footer span {
-  color: #777777;
+  color: #ddd;
 }
 
 /*# sourceMappingURL=style.css.map */
